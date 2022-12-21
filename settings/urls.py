@@ -16,7 +16,7 @@ def custom_server_error(request):
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admins/', admin.site.urls),
     path('api/', include("api.urls")),
     path("", TemplateView.as_view(template_name="index.html")),
     path("404/", custom_page_not_found),
