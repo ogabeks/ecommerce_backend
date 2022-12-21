@@ -2,12 +2,11 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from .serializers import ProductSerializers, CategorySerializer, UserSerializer
 from rest_framework.views import APIView
-from .models import Product, Category
+from .models import Product, Category, Order
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
-from django.contrib.auth.models import User
 from rest_framework import status
-from rest_framework.generics import CreateAPIView
+from rest_framework import permissions
 
 
 class ProductsListAPI(APIView):

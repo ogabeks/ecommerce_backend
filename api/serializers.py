@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Category
+from .models import Product, Category, Order
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
 
